@@ -31,6 +31,33 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'hamlit'
+  gem 'simple_form'
+  gem 'annotate'
+  gem 'i18n-tasks'
+  gem 'devise'
+  gem 'cocoon'
+  gem 'cancancan'
+  gem 'font-awesome-sass'
+  gem 'spec'
+  gem 'bootstrap'
+  gem 'brakeman'
+  gem 'guard'
+  gem 'database_cleaner'
+  gem 'hamlit-rails'
+  gem 'letter_opener'
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'rails-i18n'
+  gem 'active_model_serializers', '~> 0.10.8'
+  gem 'jwt'
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'faker', '~> 1.9'
+  gem 'rspec-rails', '~> 4.0'
+  gem 'rubocop', require: false
+
 end
 
 group :development do
