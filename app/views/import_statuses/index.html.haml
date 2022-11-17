@@ -1,0 +1,21 @@
+%h1 Listing import_statuses
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @import_statuses.each do |import_status|
+      %tr
+        %td= import_status.name
+        %td= link_to 'Show', import_status
+        %td= link_to 'Edit', edit_import_status_path(import_status)
+        %td= link_to 'Destroy', import_status, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Import status', new_import_status_path

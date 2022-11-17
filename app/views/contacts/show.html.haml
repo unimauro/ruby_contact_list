@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @contact.name
+%p
+  %b Date of birth:
+  = @contact.date_of_birth
+%p
+  %b Telephone:
+  = @contact.telephone
+%p
+  %b Address:
+  = @contact.address
+%p
+  %b Credit card number:
+  = @contact.credit_card_number
+%p
+  %b Email:
+  = @contact.email
+%p
+  %b Import status:
+  = @contact.import_status
+%p
+  %b User:
+  = @contact.user
+%p
+  %b Credit card network:
+  = @contact.credit_card_network
+
+= link_to 'Edit', edit_contact_path(@contact)
+\|
+= link_to 'Back', contacts_path

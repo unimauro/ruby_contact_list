@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @credit_card_network.name
+
+= link_to 'Edit', edit_credit_card_network_path(@credit_card_network)
+\|
+= link_to 'Back', credit_card_networks_path

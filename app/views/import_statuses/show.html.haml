@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @import_status.name
+
+= link_to 'Edit', edit_import_status_path(@import_status)
+\|
+= link_to 'Back', import_statuses_path
